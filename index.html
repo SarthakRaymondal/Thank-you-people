@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you!!</title>
+    <link rel="icon" type="image/jpeg" href="timg2.jpeg" id="thumbnail">
+    <style>
+body {
+    margin: 0;
+}
+.bg {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(50%) blur(2px);
+    animation-name: bg1;
+    animation-duration: 0.7s;
+    
+}
+@keyframes bg1 {
+    0%{opacity: 0;}
+    30%{opacity: 0.5;}
+   50%{opacity:0.8}
+    100%{opacity: 1;}
+}
+.font1 {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.font2 {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.title {
+    font-size: 60px;
+    text-align: center;
+    transition: 0.1s;
+    color: white;
+    user-select: none;
+}
+.title:hover {
+    font-size: 67px;
+}
+.title2 {
+    font-size: 30px;
+    text-align: center;
+    transition: 0.1s;
+    color: white;
+    user-select: none;
+}
+.title2:hover {
+    font-size: 32px;
+}
+.message {
+    height: 100%;
+    width: 98%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+.credits {
+    margin-left: 6px;color: white;border-bottom: 2px solid white;
+}
+.credits:hover {
+   color:blue;
+   border-bottom: 2px solid blue;
+}
+.about {
+    margin-left: 6px;color: white;border-bottom: 2px solid white;
+}
+.about:hover {
+   color:blue;
+   border-bottom: 2px solid blue;
+}
+    </style>
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <img src="img1.jpg" class="bg"><br><br>
+    <div style="width: 100%;display: flex;justify-content: center;"><a class="font2 title2">🎊</a><a class="font2 title2">To those who wished me,</a><a class="font2 title2">🎊</a></div>
+    <div style="width: 100%;display: flex;justify-content: center;"><a class="font2 title">Thank You<br>for your wish!!</a></div><br>
+    <div style="width: 100%;display: flex;justify-content: center;"><div class="message">
+    <br><div style="display: flex;"><a class="font2" style="color: #bebdbc;margin-left: 5px;font-size: 30px;">Message from Sarthak,</a></div>
+    <div style="display: flex;margin-right: 5px;"><a class="font2" style="color: #8e8d8b;margin-left: 5px;font-size: 20px;">Thank u for wishing for my birthday.I really appreciate your wishes and hope that you all are always good wherever,whatever situation you are facing.I never soo many of you wishing me.I feel soo lucky to have people like you.May God bless you.Stay positive🤗</a></div>
+    <br><br><br><br>
+    </div></div><br>
+    <a class="font2 credits" onclick="credits()">See credits</a><a class="font2 about" onclick="about()">About</a>
+<script>
+    function credits() {
+        alert(
+            "Bg:https://www.wallpaperflare.com/black-and-brown-wooden-thank-you-signage-on-top-of-brown-table-wallpaper-zcwkf/download\n\nRgb color picker:https://htmlcolorcodes.com/color-picker/\n\nOther images:\nBg Cap:KRIVEK Happy Birthday Party Hat for Kids Children Cone Celebration Craft Paper Cap from flipkart.com\nThumps up:https://emojis.wiki/\n\nRest of thing:me(Sarthak)"
+        )
+    }
+    function about() {
+        alert("This card is made to thank those people who have wished Sarthak on his birthday post in facebook:)But he loves all the people.")
+    }
+</script>
+<script>
+    window.setInterval(title1, 10000);
+    function title1() {
+    document.getElementById("thumbnail").href= "timg1.jpeg"
+      document.title = "Made by Sarthak!!";
+      window.setInterval(title2, 10000);
+
+    }
+    function title2() {
+            document.getElementById("thumbnail").href= "timg2.jpeg"
+        document.title = "Thank you!!";
+        window.setInterval(title1, 10000);
+    }
+</script>
+</body>
+</html>
